@@ -2,11 +2,11 @@ import React, { FC, ReactElement } from 'react'
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
-interface LoginLayoutProps {
+interface AuthLayoutProps {
   children: ReactElement;
 }
 
-const LoginLayout: FC<LoginLayoutProps> = ({children}) => {
+const AuthLayout: FC<AuthLayoutProps> = ({children}) => {
   return (
     <>
       <Header/>
@@ -18,4 +18,4 @@ const LoginLayout: FC<LoginLayoutProps> = ({children}) => {
   )
 }
 
-export default LoginLayout;
+export default AuthLayout;
