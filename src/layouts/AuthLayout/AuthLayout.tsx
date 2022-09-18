@@ -1,3 +1,4 @@
+import './AuthLayout.css';
 import React, { FC, ReactElement } from 'react'
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
@@ -8,13 +9,17 @@ interface AuthLayoutProps {
 
 const AuthLayout: FC<AuthLayoutProps> = ({children}) => {
   return (
-    <>
-      <Header/>
-      <main>
+    <div className='auth-layout'>
+      <div className='auth-layout__header'>
+        <Header/>
+      </div>
+      <main className='auth-layout__content'>
         {children}
       </main>
-      <Footer />
-    </>
+      <div className='auth-layout__footer'>
+        <Footer />
+      </div>
+    </div>
   )
 }
 

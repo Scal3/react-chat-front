@@ -1,0 +1,23 @@
+.auth-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.auth-layout__header {
+  flex-grow: 1;
+  border: 1px solid blue;
+
+}
+
+.auth-layout__content {
+  flex-grow: 10;
+  border: 1px solid blue;
+
+}
+
+.auth-layout__footer {
+  flex-grow: 1;
+  border: 1px solid blue;
+
+}

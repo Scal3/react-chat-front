@@ -1,9 +1,13 @@
+import './RegisterPage.css';
 import React from 'react'
+import AuthLayout from '../../layouts/AuthLayout/AuthLayout';
 
 const RegisterPage = () => {
   return (
     <>
-      register
+      <AuthLayout>
+        <h1>register</h1>
+      </AuthLayout>
     </>
   )
 }
